@@ -13,6 +13,12 @@ const StyledContactList = styled.div`
   ul {
     list-style-type: none;
     overflow-wrap: anywhere;
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
   }
 `;
 const StyledForm = styled.div`
@@ -80,8 +86,10 @@ const Contact = () => {
       <StyledContactList>
         <ul>
           <li>
-            <span className='iconFont'>i </span>
-            https://www.linkedin.com/in/dkazaryan/
+            <a href='https://www.linkedin.com/in/dkazaryan'>
+              <span className='iconFont'>i </span>
+              in/dkazaryan &nbsp;&nbsp;
+            </a>
           </li>
         </ul>
       </StyledContactList>
